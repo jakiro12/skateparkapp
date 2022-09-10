@@ -55,7 +55,7 @@ const BikeParksData={
     la_plata_6:'https://maps.app.goo.gl/ZoPGk4YyxmM5zCxv6',    
     general_belgrano:'https://maps.app.goo.gl/5oPMD4i3pJWyXPHV6',
     san_clemente_de_tuyu:'https://maps.app.goo.gl/t9jEjyRDZ2WsQpkU8',
-    hola:'asdf'
+    
 }
 module.exports={
     OpenMap,
