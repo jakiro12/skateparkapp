@@ -55,7 +55,27 @@ const BikeParksData={
     la_plata_6:'https://maps.app.goo.gl/ZoPGk4YyxmM5zCxv6',    
     general_belgrano:'https://maps.app.goo.gl/5oPMD4i3pJWyXPHV6',
     san_clemente_de_tuyu:'https://maps.app.goo.gl/t9jEjyRDZ2WsQpkU8',
+    las_toninas:'https://maps.app.goo.gl/WMW8kcKrAkzocsbK6',
+    santa_teresita:'https://maps.app.goo.gl/HVLmx5AY88sead8BA',
+    san_bernardo:'https://maps.app.goo.gl/SQLoNpKqfD6mUUds6',
+    pinamar:'https://maps.app.goo.gl/DNfTs8qKRmjtFuNFA',
+    villa_gesell:'https://maps.app.goo.gl/gFj486nFQ5AcAodm8',
+    mar_chiquita:'https://maps.app.goo.gl/aTuVSr4KsBZY9HDA8',
+    santa_clara_del_mar:'https://maps.app.goo.gl/CE4T5ng1yFzyC92M7',
+    mar_del_plata_1:'https://maps.app.goo.gl/vB3mt3c6V5JhjfN46',
+    mar_del_plata_2:'https://maps.app.goo.gl/HPUBRRGdrUqCpmkN8',
+    mar_del_plata_3:'https://maps.app.goo.gl/c25LdUCnqTQEUYmd8',
+    chapadmalal:'https://maps.app.goo.gl/sGdThszxDw7nJGiBA',
+    miramar_1:'https://maps.app.goo.gl/onYgXVyMBPSCY2Gu7',
+    miramar_2:'https://maps.app.goo.gl/cngE9sK1X2uhYe537',
+    necochea:'https://maps.app.goo.gl/4DNebT9d6jkvUWKo7',
+    punta_alta:'https://maps.app.goo.gl/cKqqY59Q1ZJeBUa98',
+    bahia_blanca:'https://maps.app.goo.gl/6XAsREZJGpNqWwZR8',
+    carmen_de_patagones:'https://maps.app.goo.gl/wqKzdRFFwbyZd73t9',
+    coronel_suarez:'https://maps.app.goo.gl/zemUeNfjufBLPY4H7',
     
+
+
 }
 module.exports={
     OpenMap,
