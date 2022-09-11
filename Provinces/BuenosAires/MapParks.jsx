@@ -73,7 +73,9 @@ const BikeParksData={
     bahia_blanca:'https://maps.app.goo.gl/6XAsREZJGpNqWwZR8',
     carmen_de_patagones:'https://maps.app.goo.gl/wqKzdRFFwbyZd73t9',
     coronel_suarez:'https://maps.app.goo.gl/zemUeNfjufBLPY4H7',
-    
+    la_prida:'https://maps.app.goo.gl/pyKqLnDFcJpcomhq8',
+    tandil_1:'https://maps.app.goo.gl/gTJhUvePdxRe68NF6',
+    tandil_2:'https://maps.app.goo.gl/NY8geHXU7nFigSbz6',
 
 
 }
