@@ -5,8 +5,8 @@ function OpenMap(url){
 }
 
 const BikeParksData={
-    san_salvador_de_jujuy:'https://maps.app.goo.gl/orhyFrpAz63ph6S5A',
-    palpala:'https://maps.app.goo.gl/ZrHbkHaQ32Af42258', 
+    san_juan:'https://maps.app.goo.gl/xzxVvvj3VvKoneEt8',
+    caucete:'https://maps.app.goo.gl/RRiqb5HQK8ym2ZoK9',
 }
 module.exports={
     OpenMap,
