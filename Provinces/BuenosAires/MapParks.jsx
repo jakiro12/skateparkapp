@@ -76,7 +76,17 @@ const BikeParksData={
     la_prida:'https://maps.app.goo.gl/pyKqLnDFcJpcomhq8',
     tandil_1:'https://maps.app.goo.gl/gTJhUvePdxRe68NF6',
     tandil_2:'https://maps.app.goo.gl/NY8geHXU7nFigSbz6',
-
+    balcarce:'https://maps.app.goo.gl/Y4QAdipmw6xsG8xp6',
+    comandante_nicanor_otamendi:'https://maps.app.goo.gl/D3NLTDrEKqgZTJMW6',
+    olavarria:'https://maps.app.goo.gl/LKKBHyQrcA6VZfkk8',
+    azul:'https://maps.app.goo.gl/r6MmPD6JsXGsPC9y6',
+    san_carlos_de_bolivar:'https://maps.app.goo.gl/yty7xU7BwYCbbrs46',
+    general_alvear:'https://maps.app.goo.gl/zSsCf5TXasAfCXFD9',
+    saladillo:'https://maps.app.goo.gl/huQoMi2eJF38zAx96',
+    veinticico_de_mayo:'https://maps.app.goo.gl/2ehj5Sq3adN1sWhq9',
+    trenque_lauquen:'https://maps.app.goo.gl/Z4EBYG9dgaAJWVeV6',
+    lincoln:'https://maps.app.goo.gl/x9YSfosXZ883JWJe7',
+    
 
 }
 module.exports={
