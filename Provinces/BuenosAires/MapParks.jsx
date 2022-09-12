@@ -3,13 +3,6 @@ import { Linking } from "react-native";
 function OpenMap(url){
     Linking.openURL(url)
 }
-
-const caba={
-    caseros:'https://maps.app.goo.gl/QAk6FMYDivWEoRrx5',
-    villa_real:'https://maps.app.goo.gl/AmSfSSHjzMDuFATw8',
-    villa_del_parque:'https://maps.app.goo.gl/2YqnrwzmfcegGDKw9',
-}
-
 const BikeParksData={
     san_nicolas_de_los_arroyos:'https://maps.app.goo.gl/7qWaPAUJ3xqRCeYd7',
     san_pedro:'https://maps.app.goo.gl/XEgAbo3zBBsS2rhq8',
@@ -86,8 +79,11 @@ const BikeParksData={
     veinticico_de_mayo:'https://maps.app.goo.gl/2ehj5Sq3adN1sWhq9',
     trenque_lauquen:'https://maps.app.goo.gl/Z4EBYG9dgaAJWVeV6',
     lincoln:'https://maps.app.goo.gl/x9YSfosXZ883JWJe7',
-    
-
+    marcos_paz:'https://maps.app.goo.gl/rv2fzcihRcGezx417',
+    merlo:'https://maps.app.goo.gl/CxS4YzAjdQJG7Kkj8',
+    san_antonio_de_pauda:'https://maps.app.goo.gl/zysMsncjLZuHSEkH9',
+    ituzaingo:'https://maps.app.goo.gl/7VD6pfr2KxdZnaDX6',
+    caseros:'https://maps.app.goo.gl/QAk6FMYDivWEoRrx5',
 }
 module.exports={
     OpenMap,
