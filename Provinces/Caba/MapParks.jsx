@@ -16,6 +16,9 @@ const BikeParksData={
     barracas:'https://maps.app.goo.gl/hw2jzsdx2tYwXaTJA',
     parque_patricios:'https://maps.app.goo.gl/T84eRHgiTCykjnAz7',
     nueva_pompeya:'https://maps.app.goo.gl/ETMeXPBNK6NxDAAx9',
+    barrio_general_savio:'https://maps.app.goo.gl/YAggQSdPLND8G4hF9',
+    mataderos:'https://maps.app.goo.gl/APV8QAqPuevAchzw9',
+    alamgro:'https://maps.app.goo.gl/4ET2j2cEKPkZuFWS7',    
 }
 module.exports={
     OpenMap,
