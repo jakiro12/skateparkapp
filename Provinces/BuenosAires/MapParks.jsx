@@ -76,7 +76,7 @@ const BikeParksData={
     san_carlos_de_bolivar:'https://maps.app.goo.gl/yty7xU7BwYCbbrs46',
     general_alvear:'https://maps.app.goo.gl/zSsCf5TXasAfCXFD9',
     saladillo:'https://maps.app.goo.gl/huQoMi2eJF38zAx96',
-    veinticico_de_mayo:'https://maps.app.goo.gl/2ehj5Sq3adN1sWhq9',
+    veinticinco_de_mayo:'https://maps.app.goo.gl/2ehj5Sq3adN1sWhq9',
     trenque_lauquen:'https://maps.app.goo.gl/Z4EBYG9dgaAJWVeV6',
     lincoln:'https://maps.app.goo.gl/x9YSfosXZ883JWJe7',
     marcos_paz:'https://maps.app.goo.gl/rv2fzcihRcGezx417',
