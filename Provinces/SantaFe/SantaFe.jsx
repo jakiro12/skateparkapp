@@ -9,7 +9,8 @@ const {OpenMap,BikeParksData}=require('./MapParks');
 
 export default function ParksInSantaFe(){
 
-    return(<ScrollView >
+    return(
+    <ScrollView>
         <View style={ViewContainer.values}>         
             <View style={ViewBox.card}><Text style={TextUbication.values}>
            <View style={CardInfo.values}>
@@ -24,90 +25,90 @@ export default function ParksInSantaFe(){
             <View style={ViewBox.card}>
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
-                    <Text> Rosario</Text>
-                    <Text> Central Argentino 1930</Text> 
-                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.rosario_ciudad)}><Text > Ubicacion</Text></TouchableOpacity>
+                    <Text style={FontAdd.values}> Rosario</Text>
+                    <Text style={FontAdd.values}> Central Argentino 1930</Text> 
+                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.rosario_ciudad)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>
              </View>
             <View style={ViewBox.card}>
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
-                    <Text> Rosario</Text>
-                    <Text> Costanera Helltrack</Text> 
-                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.rosario_helltrack)}><Text > Ubicacion</Text></TouchableOpacity>
+                    <Text style={FontAdd.values}> Rosario</Text>
+                    <Text style={FontAdd.values}> Costanera Helltrack</Text> 
+                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.rosario_helltrack)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>             
             </View>
             <View style={ViewBox.card}>
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
-                    <Text> San Lorenzo</Text>
-                    <Text> Av. del combate 502</Text> 
-                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.san_lorenzo)}><Text > Ubicacion</Text></TouchableOpacity>
+                    <Text style={FontAdd.values}> San Lorenzo</Text>
+                    <Text style={FontAdd.values}> Av. del combate 502</Text> 
+                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.san_lorenzo)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>             
             </View>
             <View style={ViewBox.card}>
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
-                    <Text> Reconquista</Text>
-                    <Text> Camping Municipal</Text> 
-                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.reco_park)}><Text > Ubicacion</Text></TouchableOpacity>
+                    <Text style={FontAdd.values}> Reconquista</Text>
+                    <Text style={FontAdd.values}> Camping Municipal</Text> 
+                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.reco_park)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>             
             </View>
             <View style={ViewBox.card}>
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
-                    <Text> Venado Tuerto</Text>
-                    <Text> Parque de destrezas</Text> 
-                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.venado_tuerto)}><Text > Ubicacion</Text></TouchableOpacity>
+                    <Text style={FontAdd.values}> Venado Tuerto</Text>
+                    <Text style={FontAdd.values}> Parque de destrezas</Text> 
+                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.venado_tuerto)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>             
             </View>
             <View style={ViewBox.card}>
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
-                    <Text> Galvez</Text>
-                    <Text> Direxx</Text> 
-                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.galvez)}><Text > Ubicacion</Text></TouchableOpacity>
+                    <Text style={FontAdd.values}> Galvez</Text>
+                    <Text style={FontAdd.values}> Direxx</Text> 
+                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.galvez)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>             
             </View>
             <View style={ViewBox.card}>
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
-                    <Text> Roldan</Text>
-                    <Text> ubixx</Text> 
-                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.roldan)}><Text > Ubicacion</Text></TouchableOpacity>
+                    <Text style={FontAdd.values}> Roldan</Text>
+                    <Text style={FontAdd.values}> ubixx</Text> 
+                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.roldan)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>             
             </View>
             <View style={ViewBox.card}>
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
-                    <Text> Funes</Text>
-                    <Text> ubixx</Text> 
-                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.funes)}><Text > Ubicacion</Text></TouchableOpacity>
+                    <Text style={FontAdd.values}> Funes</Text>
+                    <Text style={FontAdd.values}> ubixx</Text> 
+                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.funes)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>             
             </View>
             <View style={ViewBox.card}>
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
-                    <Text> Rufino</Text>
-                    <Text> ubixx</Text> 
-                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.rufino)}><Text > Ubicacion</Text></TouchableOpacity>
+                    <Text style={FontAdd.values}> Rufino</Text>
+                    <Text style={FontAdd.values}> ubixx</Text> 
+                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.rufino)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>             
             </View>
             <View style={ViewBox.card}>
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
-                    <Text> Santo Tome</Text>
-                    <Text> ubixx</Text> 
-                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.santo_tome)}><Text > Ubicacion</Text></TouchableOpacity>
+                    <Text style={FontAdd.values}> Santo Tome</Text>
+                    <Text style={FontAdd.values}> ubixx</Text> 
+                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.santo_tome)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>             
             </View>

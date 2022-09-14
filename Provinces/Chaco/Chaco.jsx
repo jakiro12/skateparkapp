@@ -23,6 +23,24 @@ export default function ParksInChaco(){
             </View>  
              </Text>
              </View>
+             <View style={ViewBox.card}>
+                    <Text style={TextUbication.values}>
+                <View style={CardInfo.values}>
+                    <Text> Las Breñas</Text>
+                    <Text> ubixxx</Text> 
+                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.las_breñas)}><Text > Ubicacion</Text></TouchableOpacity>
+            </View>  
+             </Text>
+             </View>
+             <View style={ViewBox.card}>
+                    <Text style={TextUbication.values}>
+                <View style={CardInfo.values}>
+                    <Text> Charata</Text>
+                    <Text> ubixxx</Text> 
+                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.charata)}><Text > Ubicacion</Text></TouchableOpacity>
+            </View>  
+             </Text>
+             </View>
           
             
            
