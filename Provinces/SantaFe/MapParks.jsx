@@ -17,6 +17,7 @@ const BikeParksData={
     funes:'https://maps.app.goo.gl/4o8Usahex75xCieJ8',
     rufino:'https://maps.app.goo.gl/9H8DQskNXFD3bsMP7',
     santo_tome:'https://maps.app.goo.gl/eqkwDRqjnjiMVm6P6',
+    rafaela:'https://maps.app.goo.gl/spA7N5cMjfp1zvPQ9',
 }
 module.exports={
     OpenMap,

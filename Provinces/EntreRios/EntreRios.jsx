@@ -1,99 +1,215 @@
 import * as React from 'react';
-import { View,Text,StyleSheet,ScrollView,Image,TouchableOpacity } from 'react-native';
+import { View,Text,StyleSheet,ScrollView,Image,TouchableOpacity,Modal } from 'react-native';
 const {OpenMap,BikeParksData}= require('./MapParks')
-
+import { _myColors } from '../../colors/paletColors';
 export default function ParksInEntreRios(){
+    const[show,setShow]=React.useState(false)
     return(
         <ScrollView >
         <View style={ViewContainer.values}>         
             <View style={ViewBox.card}><Text style={TextUbication.values}>
            <View style={CardInfo.values}>
-            <Text> Parana</Text>
-            <Text> Costanera</Text> 
-            <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.parana)}><Text > Ubicacion</Text></TouchableOpacity>
+            <Text style={FontAdd.values}> Parana</Text>
+            <Text style={FontAdd.values}> Costanera</Text> 
+            <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.parana)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>
+              <Modal            
+              animationType='none'
+              transparent={false}
+              visible={show}
+              onRequestClose={() => { setShow(false); } }
+              >
+                <View style={ImgSite.imageposition} >
              <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
-       style={{width: 50, height: 50,position:'absolute',top:'15%',right:'10%'}} />  
+       style={ImgSite.values} />  
+                </View>
+            </Modal>
+            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
              </View>
             <View style={ViewBox.card}>
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
-                    <Text> Diamante</Text>
-                    <Text> ubixxx</Text> 
-                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.diamante)}><Text > Ubicacion</Text></TouchableOpacity>
+                    <Text style={FontAdd.values}> Diamante</Text>
+                    <Text style={FontAdd.values}> Almirante Brown 700</Text> 
+                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.diamante)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>
+             <Modal            
+              animationType='none'
+              transparent={false}
+              visible={show}
+              onRequestClose={() => { setShow(false); } }
+              >
+                <View style={ImgSite.imageposition} >
+             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={ImgSite.values} />  
+                </View>
+            </Modal>
+            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
              </View>
           
              <View style={ViewBox.card}>
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
-                    <Text> Segui</Text>
-                    <Text> ubixxx</Text> 
-                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.segui)}><Text > Ubicacion</Text></TouchableOpacity>
+                    <Text style={FontAdd.values}> Segui</Text>
+                    <Text style={FontAdd.values}> Sargento Cabral</Text> 
+                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.segui)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>
+             <Modal            
+              animationType='none'
+              transparent={false}
+              visible={show}
+              onRequestClose={() => { setShow(false); } }
+              >
+                <View style={ImgSite.imageposition} >
+             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={ImgSite.values} />  
+                </View>
+            </Modal>
+            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
              </View>
 
              <View style={ViewBox.card}>
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
-                    <Text> Concordia</Text>
-                    <Text> ubixxx</Text> 
-                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.concordia)}><Text > Ubicacion</Text></TouchableOpacity>
+                    <Text style={FontAdd.values}> Concordia</Text>
+                    <Text style={FontAdd.values}> Av del Rio</Text> 
+                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.concordia)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>
+             <Modal            
+              animationType='none'
+              transparent={false}
+              visible={show}
+              onRequestClose={() => { setShow(false); } }
+              >
+                <View style={ImgSite.imageposition} >
+             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={ImgSite.values} />  
+                </View>
+            </Modal>
+            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
              </View>
 
              <View style={ViewBox.card}>
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
-                    <Text> Gualeguaychu</Text>
-                    <Text> ubixxx</Text> 
-                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.gualeguaychu)}><Text > Ubicacion</Text></TouchableOpacity>
+                    <Text style={FontAdd.values}> Gualeguaychu</Text>
+                    <Text style={FontAdd.values}> 3 de febrero</Text> 
+                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.gualeguaychu)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>
+             <Modal            
+              animationType='none'
+              transparent={false}
+              visible={show}
+              onRequestClose={() => { setShow(false); } }
+              >
+                <View style={ImgSite.imageposition} >
+             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={ImgSite.values} />  
+                </View>
+            </Modal>
+            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
              </View>
             
              <View style={ViewBox.card}>
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
-                    <Text> Concepcion del Uruguay</Text>
-                    <Text> ubixxx</Text> 
-                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.concepcion_del_uruguay)}><Text > Ubicacion</Text></TouchableOpacity>
+                    <Text style={FontAdd.values}> Concepcion del Uruguay</Text>
+                    <Text style={FontAdd.values}> Parque integrador Brian</Text> 
+                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.concepcion_del_uruguay)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>
+             <Modal            
+              animationType='none'
+              transparent={false}
+              visible={show}
+              onRequestClose={() => { setShow(false); } }
+              >
+                <View style={ImgSite.imageposition} >
+             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={ImgSite.values} />  
+                </View>
+            </Modal>
+            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
              </View>
 
              <View style={ViewBox.card}>
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
-                    <Text> Villaguay</Text>
-                    <Text> ubixxx</Text> 
-                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.villaguay)}><Text > Ubicacion</Text></TouchableOpacity>
+                    <Text style={FontAdd.values}> Villaguay</Text>
+                    <Text style={FontAdd.values}> Av Raul Alfonsin</Text> 
+                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.villaguay)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>
+             <Modal            
+              animationType='none'
+              transparent={false}
+              visible={show}
+              onRequestClose={() => { setShow(false); } }
+              >
+                <View style={ImgSite.imageposition} >
+             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={ImgSite.values} />  
+                </View>
+            </Modal>
+            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
              </View>
 
              <View style={ViewBox.card}>
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
-                    <Text> Libertador de San Martin</Text>
-                    <Text> ubixxx</Text> 
-                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.libertador_san_martin)}><Text > Ubicacion</Text></TouchableOpacity>
+                    <Text style={FontAdd.values}> Libertador de San Martin</Text>
+                    <Text style={FontAdd.values}> Ramon Isasi</Text> 
+                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.libertador_san_martin)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>
+             <Modal            
+              animationType='none'
+              transparent={false}
+              visible={show}
+              onRequestClose={() => { setShow(false); } }
+              >
+                <View style={ImgSite.imageposition} >
+             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={ImgSite.values} />  
+                </View>
+            </Modal>
+            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
              </View>
 
              <View style={ViewBox.card}>
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
-                    <Text> Gualeguay</Text>
-                    <Text> ubixxx</Text> 
-                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.gualeguay)}><Text > Ubicacion</Text></TouchableOpacity>
+                    <Text style={FontAdd.values}> Gualeguay</Text>
+                    <Text style={FontAdd.values}> Av Costanera</Text> 
+                    <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.gualeguay)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>
+             <Modal            
+              animationType='none'
+              transparent={false}
+              visible={show}
+              onRequestClose={() => { setShow(false); } }
+              >
+                <View style={ImgSite.imageposition} >
+             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={ImgSite.values} />  
+                </View>
+            </Modal>
+            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
              </View>
            
          
@@ -123,8 +239,9 @@ const TextUbication=StyleSheet.create({
     },
     btn:{
         marginTop:3,
-        borderColor:'red',
-        borderWidth:2,
+        borderColor:_myColors.secondary,
+        borderWidth:3,
+        backgroundColor:_myColors.secondary,
         width:84, 
         alignItems:'center',
         borderRadius:4,
@@ -142,11 +259,33 @@ const ViewBox=StyleSheet.create({
         marginTop:15,
         position: 'relative',
         borderRadius: 4 ,
+        backgroundColor:_myColors.fifth,
+        opacity: 0.9,
     }
 })
 const CardInfo=StyleSheet.create({
     values:{
         flex: 1,
         flexDirection:'column',
+    }
+})
+const FontAdd=StyleSheet.create({
+    values:{
+        color: 'black',
+        opacity: 1,
+        fontWeight:'bold',
+    }
+})
+const ImgSite=StyleSheet.create({
+    values:{    
+         height: 300,
+         width: '100%',
+         resizeMode:'cover',
+    },
+    imageposition:{
+        flex: 1,
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
     }
 })

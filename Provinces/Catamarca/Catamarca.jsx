@@ -1,20 +1,33 @@
 import * as React from 'react';
-import { View,Text,StyleSheet,ScrollView,Image,TouchableOpacity } from 'react-native';
+import { View,Text,StyleSheet,ScrollView,Image,TouchableOpacity,Modal } from 'react-native';
 const {OpenMap,BikeParksData}=require('./MapParks')
-
+import { _myColors } from '../../colors/paletColors';
 export default function ParksInCatamarca(){
+    const[show,setShow]=React.useState(false)  
     return(
         <ScrollView >
         <View style={ViewContainer.values}>         
             <View style={ViewBox.card}><Text style={TextUbication.values}>
            <View style={CardInfo.values}>
-            <Text> San Fernando</Text>
-            <Text> ubixx</Text> 
-            <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.san_fernando_del_valle_de_catamarca)}><Text > Ubicacion</Text></TouchableOpacity>
+            <Text style={FontAdd.values}> San Fernando</Text>
+            <Text style={FontAdd.values}> Juan Bellavia</Text> 
+            <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.san_fernando_del_valle_de_catamarca)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
-       style={{width: 50, height: 50,position:'absolute',top:'15%',right:'10%'}} />  
+                <Modal            
+              animationType='none'
+              transparent={false}
+              visible={show}
+              onRequestClose={() => { setShow(false); } }
+              >
+                <View style={ImgSite.imageposition} >
+             <Image source={require('../../ImagesExample/Catamarca/cata.jpg')}
+       style={ImgSite.values} />  
+                </View>
+            </Modal>
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:150}}>
+                 <Image source={require('../../ImagesExample/Catamarca/cata.jpg')}
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity>
              </View>            
         </View>
         </ScrollView>
@@ -37,8 +50,9 @@ const TextUbication=StyleSheet.create({
     },
     btn:{
         marginTop:3,
-        borderColor:'red',
-        borderWidth:2,
+        borderColor:_myColors.secondary,
+        borderWidth:3,
+        backgroundColor:_myColors.secondary,
         width:84, 
         alignItems:'center',
         borderRadius:4,
@@ -56,11 +70,33 @@ const ViewBox=StyleSheet.create({
         marginTop:15,
         position: 'relative',
         borderRadius: 4 ,
+        backgroundColor:_myColors.fifth,
+        opacity: 0.9,
     }
 })
 const CardInfo=StyleSheet.create({
     values:{
         flex: 1,
         flexDirection:'column',
+    }
+})
+const FontAdd=StyleSheet.create({
+    values:{
+        color: 'black',
+        opacity: 1,
+        fontWeight:'bold',
+    }
+})
+const ImgSite=StyleSheet.create({
+    values:{    
+         height: 300,
+         width: '100%',
+         resizeMode:'cover',
+    },
+    imageposition:{
+        flex: 1,
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
     }
 })

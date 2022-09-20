@@ -12,6 +12,7 @@ const BikeParksData={
     comodoro_rivadavia_1:'https://maps.app.goo.gl/fRcDTpfWcFKTgQfb6',
     comodoro_rivadavia_2:'https://maps.app.goo.gl/dWgo3iqeRQD4sZ159',
     rada_tilly:'https://maps.app.goo.gl/qK9g99Vn83zmRoWw6',
+    saenz_peña:'https://maps.app.goo.gl/d7E2RULwcWTD7Jue8',
 }
 module.exports={
     OpenMap,

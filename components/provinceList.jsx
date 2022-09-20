@@ -6,9 +6,11 @@ import EachProvince from '../MasterBtn/ButtonForEveryP';
 
 export default function List(){
   
-    return(<ScrollView style={styleAllBtns.values} disableIntervalMomentum={false} contentContainerStyle={style.values}>         
+    return(
+    <ScrollView style={styleAllBtns.values} disableIntervalMomentum={false} keyboardShouldPersistTaps='always' contentContainerStyle={style.values}>         
         <EachProvince  />
         </ScrollView>
+       
     )
 }
 

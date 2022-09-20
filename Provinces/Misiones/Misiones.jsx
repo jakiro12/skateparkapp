@@ -1,9 +1,10 @@
 import * as React from 'react';
-import { View,Text,StyleSheet,ScrollView,Image,TouchableOpacity } from 'react-native';
+import { View,Text,StyleSheet,ScrollView,Image,TouchableOpacity,Modal } from 'react-native';
 const {OpenMap,BikeParksData}=require('./MapParks')
 import { _myColors } from '../../colors/paletColors';
 
 export default function ParksInMisiones(){
+    const[show,setShow]=React.useState(false)
     return(
         <ScrollView>
             <View style={ViewContainer.values}>         
@@ -14,8 +15,19 @@ export default function ParksInMisiones(){
                 <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.villa_cabello)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
                 </View>  
                  </Text>
-                 <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
-           style={{width: 50, height: 50,position:'absolute',top:'15%',right:'10%'}} />  
+                 <Modal            
+              animationType='none'
+              transparent={false}
+              visible={show}
+              onRequestClose={() => { setShow(false); } }
+              >
+                <View style={ImgSite.imageposition} >
+             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={ImgSite.values} />  
+                </View>
+            </Modal>
+            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
                  </View>
                 <View style={ViewBox.card}>
                         <Text style={TextUbication.values}>
@@ -25,6 +37,19 @@ export default function ParksInMisiones(){
                         <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.el_brete)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
                 </View>  
                  </Text>
+                 <Modal            
+              animationType='none'
+              transparent={false}
+              visible={show}
+              onRequestClose={() => { setShow(false); } }
+              >
+                <View style={ImgSite.imageposition} >
+             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={ImgSite.values} />  
+                </View>
+            </Modal>
+            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
                  </View>
                 <View style={ViewBox.card}>
                         <Text style={TextUbication.values}>
@@ -33,7 +58,20 @@ export default function ParksInMisiones(){
                         <Text style={FontAdd.values}> Yabatis</Text> 
                         <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.alem)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
                 </View>  
-                 </Text>             
+                 </Text>    
+                 <Modal            
+              animationType='none'
+              transparent={false}
+              visible={show}
+              onRequestClose={() => { setShow(false); } }
+              >
+                <View style={ImgSite.imageposition} >
+             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={ImgSite.values} />  
+                </View>
+            </Modal>
+            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={{height:50,width:50,}} /> </Text></TouchableOpacity>         
                 </View>
                 <View style={ViewBox.card}>
                         <Text style={TextUbication.values}>
@@ -42,7 +80,20 @@ export default function ParksInMisiones(){
                         <Text style={FontAdd.values}> Jose Felix Uriburu</Text> 
                         <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.obera)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
                 </View>  
-                 </Text>             
+                 </Text>  
+                 <Modal            
+              animationType='none'
+              transparent={false}
+              visible={show}
+              onRequestClose={() => { setShow(false); } }
+              >
+                <View style={ImgSite.imageposition} >
+             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={ImgSite.values} />  
+                </View>
+            </Modal>
+            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={{height:50,width:50,}} /> </Text></TouchableOpacity>           
                 </View>
                 <View style={ViewBox.card}>
                         <Text style={TextUbication.values}>
@@ -51,7 +102,20 @@ export default function ParksInMisiones(){
                         <Text style={FontAdd.values}> Jose Felix Uriburu</Text> 
                         <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.puerto_rico)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
                 </View>  
-                 </Text>             
+                 </Text>  
+                 <Modal            
+              animationType='none'
+              transparent={false}
+              visible={show}
+              onRequestClose={() => { setShow(false); } }
+              >
+                <View style={ImgSite.imageposition} >
+             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={ImgSite.values} />  
+                </View>
+            </Modal>
+            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={{height:50,width:50,}} /> </Text></TouchableOpacity>           
                 </View>
                 <View style={ViewBox.card}>
                         <Text style={TextUbication.values}>
@@ -60,9 +124,21 @@ export default function ParksInMisiones(){
                         <Text style={FontAdd.values}> Jose Felix Uriburu</Text> 
                         <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.apostoles)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
                 </View>  
-                 </Text>             
+                 </Text>    
+                 <Modal            
+              animationType='none'
+              transparent={false}
+              visible={show}
+              onRequestClose={() => { setShow(false); } }
+              >
+                <View style={ImgSite.imageposition} >
+             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={ImgSite.values} />  
                 </View>
-               
+            </Modal>
+            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+       style={{height:50,width:50,}} /> </Text></TouchableOpacity>         
+                </View>               
             </View>
             </ScrollView>
         )
@@ -86,6 +162,7 @@ export default function ParksInMisiones(){
             marginTop:3,
             borderColor:_myColors.secondary,
             borderWidth:3,
+            backgroundColor:_myColors.secondary,
             width:84, 
             alignItems:'center',
             borderRadius:4,
@@ -104,7 +181,7 @@ export default function ParksInMisiones(){
             position: 'relative',
             borderRadius: 4 ,
             backgroundColor:_myColors.fifth,
-            opacity: 0.7,
+            opacity: 0.9,
         }
     })
     const CardInfo=StyleSheet.create({
@@ -118,5 +195,18 @@ export default function ParksInMisiones(){
             color: 'black',
             opacity: 1,
             fontWeight:'bold',
+        }
+    })
+    const ImgSite=StyleSheet.create({
+        values:{    
+             height: 300,
+             width: '100%',
+             resizeMode:'cover',
+        },
+        imageposition:{
+            flex: 1,
+              flexDirection: 'column',
+              justifyContent: 'center',
+              alignItems: 'center',
         }
     })
