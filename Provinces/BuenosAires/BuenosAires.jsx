@@ -406,7 +406,7 @@ export default function ParksInBuenosAires(){
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
                     <Text style={FontAdd.values}> Lobos</Text>
-                    <Text style={FontAdd.values}> Parque Lobos</Text> 
+                    <Text style={FontAdd.values}> Salgado Oeste 700</Text> 
                     <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.lobos)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text> 
@@ -516,7 +516,7 @@ export default function ParksInBuenosAires(){
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
                     <Text style={FontAdd.values}> Alto Avellaneda</Text>
-                    <Text style={FontAdd.values}> Limay 1000</Text> 
+                    <Text style={FontAdd.values}> Limay 300</Text> 
                     <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.alto_avellaneda)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>  
@@ -956,7 +956,7 @@ export default function ParksInBuenosAires(){
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
                     <Text style={FontAdd.values}> Santa Teresita</Text>
-                    <Text style={FontAdd.values}> Av Costanera</Text> 
+                    <Text style={FontAdd.values}> Av Costanera 1075</Text> 
                     <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.santa_teresita)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>  
@@ -1000,7 +1000,7 @@ export default function ParksInBuenosAires(){
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
                     <Text style={FontAdd.values}> Pinamar</Text>
-                    <Text style={FontAdd.values}> Del Melgacho 1350</Text> 
+                    <Text style={FontAdd.values}> Av Martín Pescador 1485 </Text> 
                     <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.pinamar)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>      
@@ -1132,7 +1132,7 @@ export default function ParksInBuenosAires(){
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
                     <Text style={FontAdd.values}> Mar del Plata</Text>
-                    <Text style={FontAdd.values}> Av Luis Angel Firpo</Text> 
+                    <Text style={FontAdd.values}> Av Luis Angel Firpo 368</Text> 
                     <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.mar_del_plata_3)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>  
@@ -1654,7 +1654,7 @@ export default function ParksInBuenosAires(){
                     <Text style={TextUbication.values}>
                 <View style={CardInfo.values}>
                     <Text style={FontAdd.values}> Merlo</Text>
-                    <Text style={FontAdd.values}> 25 de Mayo 1850</Text> 
+                    <Text style={FontAdd.values}> Av Julian M. Castro 222</Text> 
                     <TouchableOpacity style={TextUbication.btn} onPress={()=>OpenMap(BikeParksData.merlo)}><Text style={FontAdd.values}> Ubicacion</Text></TouchableOpacity>
             </View>  
              </Text>        
