@@ -114,7 +114,7 @@ const FontAdd=StyleSheet.create({
 })
 const ImgSite=StyleSheet.create({
     values:{    
-         height: 300,
+         height: 250,
          width: '100%',
          resizeMode:'cover',
     },

@@ -20,13 +20,13 @@ export default function ParksInTucuman(){
               visible={show}
               onRequestClose={() => { setShow(false); } }
               >
-                <TouchableOpacity style={ImgSite.imageposition} >
+                <View style={ImgSite.imageposition} >
              <Image source={require('../../ImagesExample/Tucuman/tucu.jpg')}
        style={ImgSite.values} />  
-                </TouchableOpacity>
+                </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={require('../../ImagesExample/Tucuman/tucu.jpg')}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity> 
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow(true)}><Text  style={{height:150}}> <Image source={require('../../ImagesExample/Tucuman/tucu.jpg')}
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity> 
              </View>
         </View>
         </ScrollView>
@@ -88,7 +88,7 @@ const FontAdd=StyleSheet.create({
 })
 const ImgSite=StyleSheet.create({
     values:{    
-         height: 300,
+         height: 250,
          width: '100%',
          resizeMode:'cover',
     },

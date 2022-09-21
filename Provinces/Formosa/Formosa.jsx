@@ -4,6 +4,7 @@ const {OpenMap,BikeParksData} =require('./MapParks')
 import { _myColors } from '../../colors/paletColors';
 export default function ParksInFormosa(){
     const[show,setShow]=React.useState(false)
+    const[show1,setShow1]=React.useState(false)
     return(
         <ScrollView >
         <View style={ViewContainer.values}>         
@@ -21,12 +22,12 @@ export default function ParksInFormosa(){
               onRequestClose={() => { setShow(false); } }
               >
                 <View style={ImgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+             <Image source={require('../../ImagesExample/Formosa/plaza.jpg')}
        style={ImgSite.values} />  
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity>  
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow(true)}><Text  style={{height:150}}> <Image source={require('../../ImagesExample/Formosa/plaza.jpg')}
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity>  
              </View>
             <View style={ViewBox.card}>
                     <Text style={TextUbication.values}>
@@ -39,16 +40,16 @@ export default function ParksInFormosa(){
              <Modal            
               animationType='none'
               transparent={false}
-              visible={show}
-              onRequestClose={() => { setShow(false); } }
+              visible={show1}
+              onRequestClose={() => { setShow1(false); } }
               >
                 <View style={ImgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+             <Image source={require('../../ImagesExample/Formosa/ciudad.jpg')}
        style={ImgSite.values} />  
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow1(true)}><Text  style={{height:150}}> <Image source={require('../../ImagesExample/Formosa/ciudad.jpg')}
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity>
              </View>      
         </View>
         </ScrollView>
@@ -110,9 +111,9 @@ const FontAdd=StyleSheet.create({
 })
 const ImgSite=StyleSheet.create({
     values:{    
-         height: 300,
+         height: 250,
          width: '100%',
-         resizeMode:'cover',
+         resizeMode:'stretch',
     },
     imageposition:{
         flex: 1,

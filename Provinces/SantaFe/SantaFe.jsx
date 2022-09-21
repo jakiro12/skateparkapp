@@ -34,7 +34,7 @@ export default function ParksInSantaFe(){
               onRequestClose={() => { setShow(false); } }
               >
                 <View style={ImgSite.imageposition} >
-             <Image source={require('../../ImagesExample/Chaco/charata.jpg')}
+             <Image source={require('../../ImagesExample/SantaFe/santafecap.jpg')}
        style={ImgSite.values} />  
                 </View>
             </Modal>
@@ -357,9 +357,9 @@ const FontAdd=StyleSheet.create({
 })
 const ImgSite=StyleSheet.create({
     values:{    
-         height: 300,
+         height: 250,
          width: '100%',
-         resizeMode:'cover',
+         resizeMode:'stretch',
     },
     imageposition:{
         flex: 1,
