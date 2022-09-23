@@ -27,9 +27,9 @@ export default function ParksInChaco(){
                        <Image  style={ImgSite.values} source={require('../../ImagesExample/Chaco/resistencia.jpg')}/>
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}>
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow(true)}><Text  style={{height:150}}>
                  <Image source={require('../../ImagesExample/Chaco/resistencia.jpg')}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity> 
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity> 
              </View>
             <View style={ViewBox.card}>
                     <Text style={TextUbication.values}>
@@ -46,12 +46,12 @@ export default function ParksInChaco(){
               onRequestClose={() => { setShow1(false); } }
               >
                 <View style={ImgSite.imageposition} >
-                <Image  style={ImgSite.values} source={require('../../ImagesExample/Chaco/chaco1.jpg')}/>
+                <Image  style={ImgSite.values} source={require('../../ImagesExample/Chaco/saenz.jpg')}/>
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow1(true)}><Text  style={{height:100}}> 
-            <Image source={require('../../ImagesExample/Chaco/chaco1.jpg')}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity> 
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow1(true)}><Text  style={{height:150}}> 
+            <Image source={require('../../ImagesExample/Chaco/saenz.jpg')}
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity> 
              </View>
              <View style={ViewBox.card}>
                     <Text style={TextUbication.values}>
@@ -71,9 +71,9 @@ export default function ParksInChaco(){
                 <Image  style={ImgSite.values} source={require('../../ImagesExample/Chaco/las_breñas.jpg')}/>
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow2(true)}><Text  style={{height:100}}> 
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow2(true)}><Text  style={{height:150}}> 
             <Image source={require('../../ImagesExample/Chaco/las_breñas.jpg')}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity> 
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity> 
              </View>
              <View style={ViewBox.card}>
                     <Text style={TextUbication.values}>
@@ -158,7 +158,8 @@ const FontAdd=StyleSheet.create({
 const ImgSite=StyleSheet.create({
     values:{    
          height: 200,
-         width: '100%',         
+         width: '100%',
+         resizeMode:'stretch'         
     },
     imageposition:{
         flex: 1,

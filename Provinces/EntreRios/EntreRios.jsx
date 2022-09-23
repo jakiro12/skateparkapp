@@ -3,7 +3,16 @@ import { View,Text,StyleSheet,ScrollView,Image,TouchableOpacity,Modal } from 're
 const {OpenMap,BikeParksData}= require('./MapParks')
 import { _myColors } from '../../colors/paletColors';
 export default function ParksInEntreRios(){
-    const[show,setShow]=React.useState(false)
+    const[show,setShow]=React.useState(false)  
+    const[show1,setShow1]=React.useState(false) 
+    const[show2,setShow2]=React.useState(false) 
+    const[show3,setShow3]=React.useState(false) 
+    const[show4,setShow4]=React.useState(false) 
+    const[show5,setShow5]=React.useState(false) 
+    const[show6,setShow6]=React.useState(false)  
+    const[show7,setShow7]=React.useState(false) 
+    const[show8,setShow8]=React.useState(false) 
+    const[show9,setShow9]=React.useState(false) 
     return(
         <ScrollView >
         <View style={ViewContainer.values}>         
@@ -21,12 +30,13 @@ export default function ParksInEntreRios(){
               onRequestClose={() => { setShow(false); } }
               >
                 <View style={ImgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+             <Image source={require('../../ImagesExample/Entrerios/parana.jpg')}
        style={ImgSite.values} />  
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow(true)}><Text  style={{height:150}}>
+                 <Image source={require('../../ImagesExample/Entrerios/parana.jpg')}
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity>
              </View>
             <View style={ViewBox.card}>
                     <Text style={TextUbication.values}>
@@ -39,16 +49,17 @@ export default function ParksInEntreRios(){
              <Modal            
               animationType='none'
               transparent={false}
-              visible={show}
-              onRequestClose={() => { setShow(false); } }
+              visible={show1}
+              onRequestClose={() => { setShow1(false); } }
               >
                 <View style={ImgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+             <Image source={require('../../ImagesExample/Entrerios/diamante.jpg')}
        style={ImgSite.values} />  
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow1(true)}><Text  style={{height:150}}>
+                 <Image source={require('../../ImagesExample/Entrerios/diamante.jpg')}
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity>
              </View>
           
              <View style={ViewBox.card}>
@@ -62,16 +73,17 @@ export default function ParksInEntreRios(){
              <Modal            
               animationType='none'
               transparent={false}
-              visible={show}
-              onRequestClose={() => { setShow(false); } }
+              visible={show2}
+              onRequestClose={() => { setShow2(false); } }
               >
                 <View style={ImgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+             <Image source={require('../../ImagesExample/Entrerios/segui.jpg')}
        style={ImgSite.values} />  
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow2(true)}><Text  style={{height:150}}> 
+            <Image source={require('../../ImagesExample/Entrerios/segui.jpg')}
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity>
              </View>
 
              <View style={ViewBox.card}>
@@ -85,16 +97,17 @@ export default function ParksInEntreRios(){
              <Modal            
               animationType='none'
               transparent={false}
-              visible={show}
-              onRequestClose={() => { setShow(false); } }
+              visible={show3}
+              onRequestClose={() => { setShow3(false); } }
               >
                 <View style={ImgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+             <Image source={require('../../ImagesExample/Entrerios/concordia.jpg')}
        style={ImgSite.values} />  
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow3(true)}><Text  style={{height:150}}>
+                 <Image source={require('../../ImagesExample/Entrerios/concordia.jpg')}
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity>
              </View>
 
              <View style={ViewBox.card}>
@@ -108,16 +121,17 @@ export default function ParksInEntreRios(){
              <Modal            
               animationType='none'
               transparent={false}
-              visible={show}
-              onRequestClose={() => { setShow(false); } }
+              visible={show4}
+              onRequestClose={() => { setShow4(false); } }
               >
                 <View style={ImgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+             <Image source={require('../../ImagesExample/Entrerios/gualeguaychu.jpg')}
        style={ImgSite.values} />  
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow4(true)}><Text  style={{height:150}}>
+                 <Image source={require('../../ImagesExample/Entrerios/gualeguaychu.jpg')}
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity>
              </View>
             
              <View style={ViewBox.card}>
@@ -131,16 +145,17 @@ export default function ParksInEntreRios(){
              <Modal            
               animationType='none'
               transparent={false}
-              visible={show}
-              onRequestClose={() => { setShow(false); } }
+              visible={show5}
+              onRequestClose={() => { setShow5(false); } }
               >
                 <View style={ImgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+             <Image source={require('../../ImagesExample/Entrerios/concepcion.jpg')}
        style={ImgSite.values} />  
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow5(true)}><Text  style={{height:150}}> 
+            <Image source={require('../../ImagesExample/Entrerios/concepcion.jpg')}
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity>
              </View>
 
              <View style={ViewBox.card}>
@@ -154,16 +169,17 @@ export default function ParksInEntreRios(){
              <Modal            
               animationType='none'
               transparent={false}
-              visible={show}
-              onRequestClose={() => { setShow(false); } }
+              visible={show6}
+              onRequestClose={() => { setShow6(false); } }
               >
                 <View style={ImgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+             <Image source={require('../../ImagesExample/Entrerios/villa.jpg')}
        style={ImgSite.values} />  
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow6(true)}><Text  style={{height:150}}>
+                 <Image source={require('../../ImagesExample/Entrerios/villa.jpg')}
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity>
              </View>
 
              <View style={ViewBox.card}>
@@ -177,16 +193,17 @@ export default function ParksInEntreRios(){
              <Modal            
               animationType='none'
               transparent={false}
-              visible={show}
-              onRequestClose={() => { setShow(false); } }
+              visible={show7}
+              onRequestClose={() => { setShow7(false); } }
               >
                 <View style={ImgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+             <Image source={require('../../ImagesExample/Entrerios/san.jpg')}
        style={ImgSite.values} />  
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow7(true)}><Text  style={{height:150}}> 
+            <Image source={require('../../ImagesExample/Entrerios/san.jpg')}
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity>
              </View>
 
              <View style={ViewBox.card}>
@@ -200,16 +217,17 @@ export default function ParksInEntreRios(){
              <Modal            
               animationType='none'
               transparent={false}
-              visible={show}
-              onRequestClose={() => { setShow(false); } }
+              visible={show8}
+              onRequestClose={() => { setShow8(false); } }
               >
                 <View style={ImgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+             <Image source={require('../../ImagesExample/Entrerios/gualeguay.jpg')}
        style={ImgSite.values} />  
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow8(true)}><Text  style={{height:150}}> 
+            <Image source={require('../../ImagesExample/Entrerios/gualeguay.jpg')}
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity>
              </View>
            
          
@@ -278,7 +296,7 @@ const FontAdd=StyleSheet.create({
 })
 const ImgSite=StyleSheet.create({
     values:{    
-         height: 300,
+         height: 250,
          width: '100%',
          resizeMode:'cover',
     },
