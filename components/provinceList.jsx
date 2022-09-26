@@ -18,7 +18,7 @@ export default function List(){
 const styleAllBtns=StyleSheet.create({
     values:{
         fontWeight:'normal',
-        paddingTop:'4%',       
+        paddingTop:'4%',   
     }
 })
 const style=StyleSheet.create({

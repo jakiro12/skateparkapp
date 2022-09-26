@@ -4,6 +4,7 @@ const {OpenMap,BikeParksData}=require('./MapParks')
 import { _myColors } from '../../colors/paletColors';
 export default function ParksInSalta(){
     const[show,setShow]=React.useState(false)  
+    const[show1,setShow1]=React.useState(false)  
     return(
         <ScrollView >
         <View style={ViewContainer.values}>         
@@ -20,13 +21,14 @@ export default function ParksInSalta(){
               visible={show}
               onRequestClose={() => { setShow(false); } }
               >
-                <TouchableOpacity style={ImgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+                <View style={ImgSite.imageposition} >
+             <Image source={require('../../ImagesExample/Salta/salta.jpg')}
        style={ImgSite.values} />  
-                </TouchableOpacity>
+                </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity>  
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow(true)}><Text  style={{height:150}}> 
+            <Image source={require('../../ImagesExample/Salta/salta.jpg')}
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity>  
              </View>
 
              <View style={ViewBox.card}><Text style={TextUbication.values}>
@@ -39,16 +41,17 @@ export default function ParksInSalta(){
              <Modal            
               animationType='none'
               transparent={false}
-              visible={show}
-              onRequestClose={() => { setShow(false); } }
+              visible={show1}
+              onRequestClose={() => { setShow1(false); } }
               >
-                <TouchableOpacity style={ImgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+                <View style={ImgSite.imageposition} >
+             <Image source={require('../../ImagesExample/Salta/parque.jpg')}
        style={ImgSite.values} />  
-                </TouchableOpacity>
+                </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow1(true)}><Text  style={{height:150}}> 
+            <Image source={require('../../ImagesExample/Salta/parque.jpg')}
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity>
              </View>
         </View>
         </ScrollView>
@@ -110,7 +113,7 @@ const FontAdd=StyleSheet.create({
 })
 const ImgSite=StyleSheet.create({
     values:{    
-         height: 300,
+         height: 250,
          width: '100%',
          resizeMode:'cover',
     },

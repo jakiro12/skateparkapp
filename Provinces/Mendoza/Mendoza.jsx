@@ -4,6 +4,12 @@ const {OpenMap,BikeParksData} =require('./MapParks')
 import { _myColors } from '../../colors/paletColors';
 export default function ParksInMendoza(){
     const[show,setShow]=React.useState(false)
+    const[show1,setShow1]=React.useState(false)
+    const[show2,setShow2]=React.useState(false)
+    const[show3,setShow3]=React.useState(false)
+    const[show4,setShow4]=React.useState(false)
+    const[show5,setShow5]=React.useState(false)
+    const[show6,setShow6]=React.useState(false)
     return(
         <ScrollView >
         <View style={ViewContainer.values}>         
@@ -21,11 +27,12 @@ export default function ParksInMendoza(){
               onRequestClose={() => { setShow(false); } }
               >
                 <View style={ImgmgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+             <Image source={require('../../ImagesExample/Mendoza/maipu.jpg')}
        style={ImgSite.values} />  
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}>
+                 <Image source={require('../../ImagesExample/Mendoza/maipu.jpg')}
        style={{height:50,width:50,}} /> </Text></TouchableOpacity>
              </View>
 
@@ -39,15 +46,16 @@ export default function ParksInMendoza(){
              <Modal            
               animationType='none'
               transparent={false}
-              visible={show}
-              onRequestClose={() => { setShow(false); } }
+              visible={show1}
+              onRequestClose={() => { setShow1(false); } }
               >
                 <View style={ImgmgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+             <Image source={require('../../ImagesExample/Mendoza/godoy.jpg')}
        style={ImgSite.values} />  
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow1(true)}><Text  style={{height:100}}> 
+            <Image source={require('../../ImagesExample/Mendoza/godoy.jpg')}
        style={{height:50,width:50,}} /> </Text></TouchableOpacity>
              </View>
 
@@ -61,15 +69,16 @@ export default function ParksInMendoza(){
              <Modal            
               animationType='none'
               transparent={false}
-              visible={show}
-              onRequestClose={() => { setShow(false); } }
+              visible={show2}
+              onRequestClose={() => { setShow2(false); } }
               >
                 <View style={ImgmgSite.imageposition} >
              <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
        style={ImgSite.values} />  
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow2(true)}><Text  style={{height:100}}>
+                 <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
        style={{height:50,width:50,}} /> </Text></TouchableOpacity>
              </View>
 
@@ -83,15 +92,16 @@ export default function ParksInMendoza(){
              <Modal            
               animationType='none'
               transparent={false}
-              visible={show}
-              onRequestClose={() => { setShow(false); } }
+              visible={show3}
+              onRequestClose={() => { setShow3(false); } }
               >
                 <View style={ImgmgSite.imageposition} >
              <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
        style={ImgSite.values} />  
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow3(true)}><Text  style={{height:100}}>
+                 <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
        style={{height:50,width:50,}} /> </Text></TouchableOpacity> 
              </View>
              <View style={ViewBox.card}><Text style={TextUbication.values}>
@@ -104,15 +114,16 @@ export default function ParksInMendoza(){
              <Modal            
               animationType='none'
               transparent={false}
-              visible={show}
-              onRequestClose={() => { setShow(false); } }
+              visible={show4}
+              onRequestClose={() => { setShow4(false); } }
               >
                 <View style={ImgmgSite.imageposition} >
              <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
        style={ImgSite.values} />  
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow4(true)}><Text  style={{height:100}}> 
+            <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
        style={{height:50,width:50,}} /> </Text></TouchableOpacity>
              </View>
              <View style={ViewBox.card}><Text style={TextUbication.values}>
@@ -125,15 +136,16 @@ export default function ParksInMendoza(){
              <Modal            
               animationType='none'
               transparent={false}
-              visible={show}
-              onRequestClose={() => { setShow(false); } }
+              visible={show5}
+              onRequestClose={() => { setShow5(false); } }
               >
                 <View style={ImgmgSite.imageposition} >
              <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
        style={ImgSite.values} />  
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow5(true)}><Text  style={{height:100}}> 
+            <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
        style={{height:50,width:50,}} /> </Text></TouchableOpacity> 
              </View>
              <View style={ViewBox.card}><Text style={TextUbication.values}>
@@ -146,15 +158,16 @@ export default function ParksInMendoza(){
              <Modal            
               animationType='none'
               transparent={false}
-              visible={show}
-              onRequestClose={() => { setShow(false); } }
+              visible={show6}
+              onRequestClose={() => { setShow6(false); } }
               >
                 <View style={ImgmgSite.imageposition} >
              <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
        style={ImgSite.values} />  
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow6(true)}><Text  style={{height:100}}> 
+            <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
        style={{height:50,width:50,}} /> </Text></TouchableOpacity>
              </View>
         </View>

@@ -26,8 +26,9 @@ export default function ParksInSantiagoDelEstero(){
        style={ImgSite.values} />  
                 </TouchableOpacity>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={require('../../ImagesExample/SantiagoDelEstero/santi.jpg')}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity> 
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow(true)}><Text  style={{height:150}}>
+                 <Image source={require('../../ImagesExample/SantiagoDelEstero/santi.jpg')}
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity> 
              </View>
         </View>
         </ScrollView>
@@ -89,7 +90,7 @@ const FontAdd=StyleSheet.create({
 })
 const ImgSite=StyleSheet.create({
     values:{    
-         height: 300,
+         height: 250,
          width: '100%',
          resizeMode:'cover',
     },

@@ -3,7 +3,11 @@ import { View,Text,StyleSheet,ScrollView,Image,TouchableOpacity,Modal } from 're
 const{OpenMap,BikeParksData}=require('./MapParks')
 import { _myColors } from '../../colors/paletColors';
 export default function ParksInNeuquen(){
-    const[show,setShow]=React.useState(false)  
+    const[show,setShow]=React.useState(false) 
+    const[show1,setShow1]=React.useState(false)  
+    const[show2,setShow2]=React.useState(false)  
+    const[show3,setShow3]=React.useState(false)  
+
     return(
         <ScrollView >
         <View style={ViewContainer.values}>         
@@ -20,13 +24,15 @@ export default function ParksInNeuquen(){
               visible={show}
               onRequestClose={() => { setShow(false); } }
               >
-                <TouchableOpacity style={ImgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+                <View style={ImgSite.imageposition} >
+             <Image source={require('../../ImagesExample/Neuquen/zapala.jpg')}
        style={ImgSite.values} />  
-                </TouchableOpacity>
+                </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
+
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow(true)}><Text  style={{height:150}}>
+                 <Image source={require('../../ImagesExample/Neuquen/zapala.jpg')}
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity>
              </View>
 
              <View style={ViewBox.card}><Text style={TextUbication.values}>
@@ -39,16 +45,17 @@ export default function ParksInNeuquen(){
              <Modal            
               animationType='none'
               transparent={false}
-              visible={show}
-              onRequestClose={() => { setShow(false); } }
+              visible={show1}
+              onRequestClose={() => { setShow1(false); } }
               >
-                <TouchableOpacity style={ImgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+                <View style={ImgSite.imageposition} >
+             <Image source={require('../../ImagesExample/Neuquen/patricio.jpg')}
        style={ImgSite.values} />  
-                </TouchableOpacity>
+                </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity> 
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow1(true)}><Text  style={{height:150}}> 
+            <Image source={require('../../ImagesExample/Neuquen/patricio.jpg')}
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity> 
              </View>
 
              <View style={ViewBox.card}><Text style={TextUbication.values}>
@@ -61,16 +68,17 @@ export default function ParksInNeuquen(){
              <Modal            
               animationType='none'
               transparent={false}
-              visible={show}
-              onRequestClose={() => { setShow(false); } }
+              visible={show2}
+              onRequestClose={() => { setShow2(false); } }
               >
-                <TouchableOpacity style={ImgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+                <View style={ImgSite.imageposition} >
+             <Image source={require('../../ImagesExample/Neuquen/neuquen1.jpg')}
        style={ImgSite.values} />  
-                </TouchableOpacity>
+                </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow2(true)}><Text  style={{height:150}}> 
+            <Image source={require('../../ImagesExample/Neuquen/neuquen1.jpg')}
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity>
              </View>
              <View style={ViewBox.card}><Text style={TextUbication.values}>
            <View style={CardInfo.values}>
@@ -82,16 +90,17 @@ export default function ParksInNeuquen(){
              <Modal            
               animationType='none'
               transparent={false}
-              visible={show}
-              onRequestClose={() => { setShow(false); } }
+              visible={show3}
+              onRequestClose={() => { setShow3(false); } }
               >
-                <TouchableOpacity style={ImgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+                <View style={ImgSite.imageposition} >
+             <Image source={require('../../ImagesExample/Neuquen/neuquen2.jpg')}
        style={ImgSite.values} />  
-                </TouchableOpacity>
+                </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity>
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow3(true)}><Text  style={{height:150}}> 
+            <Image source={require('../../ImagesExample/Neuquen/neuquen2.jpg')}
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity>
              </View>
         </View>
         </ScrollView>
@@ -153,9 +162,9 @@ const FontAdd=StyleSheet.create({
 })
 const ImgSite=StyleSheet.create({
     values:{    
-         height: 300,
+         height: 250,
          width: '100%',
-         resizeMode:'cover',
+         resizeMode:'stretch',
     },
     imageposition:{
         flex: 1,
