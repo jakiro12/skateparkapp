@@ -27,8 +27,8 @@ export default function ParksInTierraDelFuego(){
        style={ImgSite.values} />  
                 </TouchableOpacity>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow(true)}><Text  style={{height:100}}> <Image source={require('../../ImagesExample/TierraDelFuego/riogrande.jpg')}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity> 
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow(true)}><Text  style={{height:150}}> <Image source={require('../../ImagesExample/TierraDelFuego/riogrande.jpg')}
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity> 
              </View>
              <View style={ViewBox.card}><Text style={TextUbication.values}>
            <View style={CardInfo.values}>
@@ -48,8 +48,8 @@ export default function ParksInTierraDelFuego(){
        style={ImgSite.values} />  
                 </TouchableOpacity>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'0%',right:25}} onPress={()=>setShow1(true)}><Text  style={{height:100}}> <Image source={require('../../ImagesExample/TierraDelFuego/usu.jpg')}
-       style={{height:50,width:50,}} /> </Text></TouchableOpacity> 
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow1(true)}><Text  style={{height:150}}> <Image source={require('../../ImagesExample/TierraDelFuego/usu.jpg')}
+       style={{height:80,width:80,}} /> </Text></TouchableOpacity> 
              </View>
         </View>
         </ScrollView>

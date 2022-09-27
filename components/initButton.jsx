@@ -15,7 +15,7 @@ export default function Province({navigation}){
     }
    
     return(
-    <ImageBackground style={imageStyle.visual} source={{ uri: "https://pbs.twimg.com/media/FLlRXcnXEAAJyvz?format=jpg&name=large" }}>
+    <ImageBackground style={imageStyle.visual} source={require('../ImagesExample/backgroundImg.jpg')}>
     <View style={behindBtn.values}>
     <StatusBar backgroundColor={_myColors.secondary}/>
        <TouchableOpacity style={style_btn} delayPressIn={0}>
@@ -40,6 +40,6 @@ const imageStyle=StyleSheet.create({
         flex: 1,
         width: null,
         height: null,
-        resizeMode:'cover'
+        
     }
 })

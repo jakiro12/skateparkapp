@@ -1,16 +1,17 @@
 
 import * as React from 'react';
-import { StyleSheet,ScrollView } from 'react-native';
+import { StyleSheet,ScrollView,ImageBackground } from 'react-native';
 import EachProvince from '../MasterBtn/ButtonForEveryP';
 
 
 export default function List(){
   
     return(
+        <ImageBackground source={require('../ImagesExample/backgroundImg.jpg')}>
     <ScrollView style={styleAllBtns.values} disableIntervalMomentum={false} keyboardShouldPersistTaps='always' contentContainerStyle={style.values}>         
         <EachProvince  />
         </ScrollView>
-       
+        </ImageBackground>
     )
 }
 

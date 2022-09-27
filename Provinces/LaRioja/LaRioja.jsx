@@ -25,11 +25,12 @@ export default function ParksInLaRioja(){
               onRequestClose={() => { setShow(false); } }
               >
                 <View style={ImgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+             <Image source={require('../../ImagesExample/Larioja/chile.jpg')}
        style={ImgSite.values} />  
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow(true)}><Text  style={{height:150}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow(true)}><Text  style={{height:150}}>
+                 <Image source={require('../../ImagesExample/Larioja/chile.jpg')}
        style={{height:80,width:80,}} /> </Text></TouchableOpacity> 
                  </View>
                 <View style={ViewBox.card}>
@@ -47,12 +48,12 @@ export default function ParksInLaRioja(){
               onRequestClose={() => { setShow1(false); } }
               >
                 <View style={ImgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+             <Image source={require('../../ImagesExample/Larioja/rioja1.jpg')}
        style={ImgSite.values} />  
                 </View>
             </Modal>
             <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow1(true)}><Text  style={{height:150}}>
-                 <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+                 <Image source={require('../../ImagesExample/Larioja/rioja1.jpg')}
        style={{height:80,width:80,}} /> </Text></TouchableOpacity>
                  </View>
                 <View style={ViewBox.card}>
@@ -70,12 +71,12 @@ export default function ParksInLaRioja(){
               onRequestClose={() => { setShow2(false); } }
               >
                 <View style={ImgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+             <Image source={require('../../ImagesExample/Larioja/rioja2.jpg')}
        style={ImgSite.values} />  
                 </View>
             </Modal>
             <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow2(true)}><Text  style={{height:150}}>
-                 <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+                 <Image source={require('../../ImagesExample/Larioja/rioja2.jpg')}
        style={{height:80,width:80,}} /> </Text></TouchableOpacity>        
                 </View>
                 <View style={ViewBox.card}>
@@ -93,12 +94,12 @@ export default function ParksInLaRioja(){
               onRequestClose={() => { setShow3(false); } }
               >
                 <View style={ImgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+             <Image source={require('../../ImagesExample/Larioja/prox.png')}
        style={ImgSite.values} />  
                 </View>
             </Modal>
             <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow3(true)}><Text  style={{height:150}}> 
-            <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+            <Image source={require('../../ImagesExample/Larioja/prox.png')}
        style={{height:80,width:80,}} /> </Text></TouchableOpacity>          
                 </View>
             </View>

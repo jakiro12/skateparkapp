@@ -22,76 +22,76 @@ export default function EachProvince(){
   
     return(<View style={styleDisplayBtn.values}>        
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('buenosaires')}>Buenos Aires</Text>
+            <Text style={TextStyle.values} onPress={()=>navigation.navigate('buenosaires')}>Buenos Aires</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('caba')}>C.A.B.A.</Text>
+            <Text style={TextStyle.values} onPress={()=>navigation.navigate('caba')}>C.A.B.A.</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('catamarca')}>Catamarca</Text>
+            <Text  style={TextStyle.values} onPress={()=>navigation.navigate('catamarca')}>Catamarca</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('chaco')}>Chaco</Text>
+            <Text style={TextStyle.values} onPress={()=>navigation.navigate('chaco')}>Chaco</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('chubut')}>Chubut</Text>
+            <Text style={TextStyle.values} onPress={()=>navigation.navigate('chubut')}>Chubut</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('cordoba')}>Córdoba</Text>
+            <Text style={TextStyle.values} onPress={()=>navigation.navigate('cordoba')}>Córdoba</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('corrientes')}>Corrientes</Text>
+            <Text style={TextStyle.values} onPress={()=>navigation.navigate('corrientes')}>Corrientes</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('entrerios')}>Entre Rios</Text>
+            <Text style={TextStyle.values} onPress={()=>navigation.navigate('entrerios')}>Entre Rios</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('formosa')}>Formosa</Text>
+            <Text style={TextStyle.values} onPress={()=>navigation.navigate('formosa')}>Formosa</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('jujuy')}>Jujuy</Text>
+            <Text style={TextStyle.values} onPress={()=>navigation.navigate('jujuy')}>Jujuy</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('lapampa')}>La Pampa</Text>
+            <Text style={TextStyle.values} onPress={()=>navigation.navigate('lapampa')}>La Pampa</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('larioja')}>La Rioja</Text>
+            <Text style={TextStyle.values} onPress={()=>navigation.navigate('larioja')}>La Rioja</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('mendoza')}>Mendoza</Text>
+            <Text style={TextStyle.values} onPress={()=>navigation.navigate('mendoza')}>Mendoza</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('misiones')}>Misiones</Text>
+            <Text style={TextStyle.values} onPress={()=>navigation.navigate('misiones')}>Misiones</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('neuquen')}>Neuquén</Text>
+            <Text style={TextStyle.values} onPress={()=>navigation.navigate('neuquen')}>Neuquén</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('rionegro')}>Rio Negro</Text>
+            <Text style={TextStyle.values} onPress={()=>navigation.navigate('rionegro')}>Rio Negro</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('salta')}>Salta</Text>
+            <Text style={TextStyle.values} onPress={()=>navigation.navigate('salta')}>Salta</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('sanjuan')}>San Juan</Text>
+            <Text style={TextStyle.values} onPress={()=>navigation.navigate('sanjuan')}>San Juan</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('sanluis')}>San Luis</Text>
+            <Text style={TextStyle.values} onPress={()=>navigation.navigate('sanluis')}>San Luis</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('santacruz')}>Santa Cruz</Text>
+            <Text style={TextStyle.values} onPress={()=>navigation.navigate('santacruz')}>Santa Cruz</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('santafe')}>Santa Fe</Text>
+            <Text style={TextStyle.values} onPress={()=>navigation.navigate('santafe')}>Santa Fe</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('santiagodelestero')}>Santiago del Estero</Text>
+            <Text style={TextStyle.values} onPress={()=>navigation.navigate('santiagodelestero')}>Santiago del Estero</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('tierradelfuego')}>Tierra del Fuego</Text>
+            <Text style={TextStyle.values} onPress={()=>navigation.navigate('tierradelfuego')}>Tierra del Fuego</Text>
         </TouchableOpacity>
         <TouchableOpacity style={style_btn}>
-            <Text onPress={()=>navigation.navigate('tucuman')}>Tucuman</Text>
+            <Text style={TextStyle.values} onPress={()=>navigation.navigate('tucuman')}>Tucuman</Text>
         </TouchableOpacity>    
             
         </View>
@@ -105,5 +105,11 @@ const styleDisplayBtn=StyleSheet.create({
         alignItems:'center',
         marginLeft:'1%',        
     }
-
+})
+const TextStyle=StyleSheet.create({
+    values:{
+        color:'#fff',
+        fontSize:15,
+        fontWeight:'bold',
+    }
 })
