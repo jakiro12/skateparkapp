@@ -3,7 +3,6 @@ import * as React from 'react';
 import { StyleSheet,ScrollView,ImageBackground } from 'react-native';
 import EachProvince from '../MasterBtn/ButtonForEveryP';
 
-
 export default function List(){
   
     return(

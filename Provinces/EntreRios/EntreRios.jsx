@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View,Text,StyleSheet,ScrollView,Image,TouchableOpacity,Modal } from 'react-native';
+import { View,Text,StyleSheet,ScrollView,Image,TouchableOpacity,Modal,ImageBackground } from 'react-native';
 const {OpenMap,BikeParksData}= require('./MapParks')
 import { _myColors } from '../../colors/paletColors';
 export default function ParksInEntreRios(){
@@ -11,9 +11,9 @@ export default function ParksInEntreRios(){
     const[show5,setShow5]=React.useState(false) 
     const[show6,setShow6]=React.useState(false)  
     const[show7,setShow7]=React.useState(false) 
-    const[show8,setShow8]=React.useState(false) 
-    const[show9,setShow9]=React.useState(false) 
+    const[show8,setShow8]=React.useState(false)  
     return(
+        <ImageBackground style={ImgSite.back} source={require('../../ImagesExample/backgroundImg.jpg')} >
         <ScrollView >
         <View style={ViewContainer.values}>         
             <View style={ViewBox.card}><Text style={TextUbication.values}>
@@ -228,16 +228,10 @@ export default function ParksInEntreRios(){
             <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow8(true)}><Text  style={{height:150}}> 
             <Image source={require('../../ImagesExample/Entrerios/gualeguay.jpg')}
        style={{height:80,width:80,}} /> </Text></TouchableOpacity>
-             </View>
-           
-         
-          
-         
-           
-            
-           
+             </View>  
         </View>
         </ScrollView>
+        </ImageBackground>
     )
 }
 
@@ -305,5 +299,8 @@ const ImgSite=StyleSheet.create({
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
+    },
+    back:{
+        height:'100%',
     }
 })

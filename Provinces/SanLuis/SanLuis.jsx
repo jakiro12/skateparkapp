@@ -1,10 +1,11 @@
 import * as React from 'react';
-import { View,Text,StyleSheet,Image,TouchableOpacity,ScrollView,Modal } from 'react-native';
+import { View,Text,StyleSheet,Image,TouchableOpacity,ScrollView,Modal,ImageBackground } from 'react-native';
 const {OpenMap,BikeParksData}= require('./MapParks')
 import { _myColors } from '../../colors/paletColors';
 export default function ParksInSanLuis(){
     const[show,setShow]=React.useState(false) 
-    return(        
+    const[show1,setShow1]=React.useState(false) 
+    return(  <ImageBackground style={ImgSite.back} source={require('../../ImagesExample/backgroundImg.jpg')}>      
         <ScrollView >
         <View style={ViewContainer.values}>         
             <View style={ViewBox.card}><Text style={TextUbication.values}>
@@ -21,11 +22,12 @@ export default function ParksInSanLuis(){
               onRequestClose={() => { setShow(false); } }
               >
                 <View style={ImgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+             <Image source={require('../../ImagesExample/Sanluis/parque.jpg')}
        style={ImgSite.values} />  
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow(true)}><Text  style={{height:150}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow(true)}><Text  style={{height:150}}> 
+            <Image source={require('../../ImagesExample/Sanluis/parque.jpg')}
        style={{height:80,width:80,}} /> </Text></TouchableOpacity> 
              </View>
              <View style={ViewBox.card}><Text style={TextUbication.values}>
@@ -38,19 +40,21 @@ export default function ParksInSanLuis(){
              <Modal            
               animationType='none'
               transparent={false}
-              visible={show}
-              onRequestClose={() => { setShow(false); } }
+              visible={show1}
+              onRequestClose={() => { setShow1(false); } }
               >
                 <View style={ImgSite.imageposition} >
-             <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+             <Image source={require('../../ImagesExample/Sanluis/merce.jpg')}
        style={ImgSite.values} />  
                 </View>
             </Modal>
-            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow(true)}><Text  style={{height:150}}> <Image source={{uri: 'https://reactjs.org/logo-og.png'}}
+            <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow1(true)}><Text  style={{height:150}}> 
+            <Image source={require('../../ImagesExample/Sanluis/merce.jpg')}
        style={{height:80,width:80,}} /> </Text></TouchableOpacity>
              </View>
         </View>
         </ScrollView>
+        </ImageBackground>
     )
 }
 
@@ -109,7 +113,7 @@ const FontAdd=StyleSheet.create({
 })
 const ImgSite=StyleSheet.create({
     values:{    
-         height: 280,
+         height: 250,
          width: '100%',
          resizeMode:'cover',
     },
@@ -118,5 +122,8 @@ const ImgSite=StyleSheet.create({
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
+    },
+    back:{
+        height:'100%',
     }
 })

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View,Text,StyleSheet,ScrollView,Image,TouchableOpacity,Modal } from 'react-native';
+import { View,Text,StyleSheet,ScrollView,Image,TouchableOpacity,Modal,ImageBackground } from 'react-native';
 const {OpenMap,BikeParksData}=require('./MapParks')
 import { _myColors } from '../../colors/paletColors';
 export default function ParksInLaPampa(){
@@ -8,6 +8,7 @@ export default function ParksInLaPampa(){
     const[show2,setShow2]=React.useState(false)
     const[show3,setShow3]=React.useState(false)
     return(
+        <ImageBackground style={ImgSite.back} source={require('../../ImagesExample/backgroundImg.jpg')} >
         <ScrollView >
         <View style={ViewContainer.values}>         
             <View style={ViewBox.card}><Text style={TextUbication.values}>
@@ -95,10 +96,9 @@ export default function ParksInLaPampa(){
             <TouchableOpacity style={{position:'absolute',bottom:'-25%',right:15}} onPress={()=>setShow3(true)}><Text  style={{height:150}}> <Image source={require('../../ImagesExample/Lapampa/pico.jpg')}
        style={{height:80,width:80,}} /> </Text></TouchableOpacity> 
              </View>
-           
-            
         </View>
         </ScrollView>
+        </ImageBackground>
     )
 }
 const ViewContainer=StyleSheet.create({
@@ -165,5 +165,8 @@ const ImgSite=StyleSheet.create({
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
+    },
+    back:{
+        height:'100%',
     }
 })

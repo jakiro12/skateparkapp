@@ -1,10 +1,11 @@
 import * as React from 'react';
-import { View,Text,StyleSheet,ScrollView,Image,TouchableOpacity,Modal } from 'react-native';
+import { View,Text,StyleSheet,ScrollView,Image,TouchableOpacity,Modal,ImageBackground } from 'react-native';
 const {OpenMap,BikeParksData}=require('./MapParks')
 import { _myColors } from '../../colors/paletColors';
 export default function ParksInSantaCruz(){
     const[show,setShow]=React.useState(false) 
     return(
+        <ImageBackground style={ImgSite.back} source={require('../../ImagesExample/backgroundImg.jpg')} >
         <ScrollView >
         <View style={ViewContainer.values}>         
             <View style={ViewBox.card}><Text style={TextUbication.values}>
@@ -32,6 +33,7 @@ export default function ParksInSantaCruz(){
             
         </View>
         </ScrollView>
+        </ImageBackground>
     )
 }
 
@@ -99,5 +101,8 @@ const ImgSite=StyleSheet.create({
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
+    },
+    back:{
+        height:'100%',
     }
 })

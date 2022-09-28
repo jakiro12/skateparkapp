@@ -1,5 +1,5 @@
 import React from 'react';
-import { View,Text,StyleSheet,Image, TouchableOpacity,ScrollView,Modal} from 'react-native';
+import { View,Text,StyleSheet,Image, TouchableOpacity,ScrollView,Modal,ImageBackground} from 'react-native';
 import { _myColors } from '../../colors/paletColors';
 const {OpenMap,BikeParksData}=require('./MapParks');
 
@@ -16,8 +16,7 @@ export default function ParksInSantaFe(){
     const[show9,setShow9]=React.useState(false) 
     const[show10,setShow10]=React.useState(false) 
     const[show11,setShow11]=React.useState(false) 
-
-    return(
+    return(<ImageBackground source={require('../../ImagesExample/backgroundImg.jpg')}>
     <ScrollView>
         <View style={ViewContainer.values}>         
             <View style={ViewBox.card}><Text style={TextUbication.values}>
@@ -299,6 +298,7 @@ export default function ParksInSantaFe(){
            
         </View>
         </ScrollView>
+        </ImageBackground>
     )
 }
 
